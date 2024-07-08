@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ofertaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RELLENE EL FORMULARIO PARA OFERTAR POR ESTA OBRA DE ARTE"
+            android:textColor="#FFFF"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="9dp"/>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:id="@+id/min_obra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/ej1"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Nombre:"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido:"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo electrónico de contacto:"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número de teléfono:"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oferta por la obra de arte:"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewDolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextOferta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/ofB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="OFERTAR"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBotones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/btnVolver4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:text="&lt;Volver"
+                    android:textColor="#9A9DDF"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnMenuPrincipal4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:text="Ir al menú principal  "
+                android:textAlignment="viewEnd"
+                android:textColor="#9A9DDF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

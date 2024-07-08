@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".gensActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:textColor="@color/white"
+                android:text="GÉNEROS Y ESTILOS"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="3dp"
+                android:text="10 géneros y estilos"
+                android:textColor="#8182C5"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/contemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/contemporaneo" />
+
+
+                    <TextView
+
+                        android:id="@+id/gencontemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Contemporáneo"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/roman"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/sur" />
+
+
+                    <TextView
+                        android:id="@+id/genroman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Surrealismo"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/white"
+                        android:textSize="26sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/artepop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/artepop" />
+
+
+                    <TextView
+                        android:id="@+id/genartepop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Arte Pop"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/white"
+                        android:textSize="26sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/cubismo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/cubismo" />
+
+
+                    <TextView
+                        android:id="@+id/gencubismo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Cubismo"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/white"
+                        android:textSize="26sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/modernismo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/modernismo" />
+
+
+                    <TextView
+                        android:id="@+id/genmodernismo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Modernismo"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/white"
+                        android:textSize="26sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/renacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+
+                        android:src="@drawable/hi" />
+
+
+                    <TextView
+                        android:id="@+id/genren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Hiperrealismo"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBotones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutColumnas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="1dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/btnVolver1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:text="&lt;Menú principal"
+                    android:textColor="#9A9DDF"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnVerOfertas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:text="Ver todas las ofertas  "
+                android:textAlignment="viewEnd"
+                android:textColor="#9A9DDF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

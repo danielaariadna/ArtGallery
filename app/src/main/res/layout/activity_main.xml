@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="66dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="ART GALLERY"
+            android:textColor="#FFFF"
+            android:textSize="54sp" />
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="56dp"
+            android:background="#9A9DDF">
+
+            <ImageView
+                android:id="@+id/photoImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:padding="9dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/artgallery" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/infoB"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="330dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="46dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="INFORMACIÓN"
+            android:textSize="27sp" />
+
+        <Button
+            android:id="@+id/gensB"
+            android:layout_width="330dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="16dp"
+            android:text="GENEROS/ESTILOS"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="27sp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="images_descriptions">
+        <item>OBRA  N°1</item>
+        <item>OBRA  N°2</item>
+        <item>OBRA  N°3</item>
+        <item>OBRA  N°4</item>
+        <item>OBRA  N°5</item>
+        <item>OBRA  N°6</item>
+    </string-array></resources>

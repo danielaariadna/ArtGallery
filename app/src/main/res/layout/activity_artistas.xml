@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".artistasActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="ARTISTAS DEL GÉNERO"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="99dp"
+                android:layout_marginTop="1dp"
+                android:text="4 artistas del género"
+                android:textAlignment="center"
+                android:textColor="#999CDE"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:layout_marginTop="10dp"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/artista1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:text="Juan Perez"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/artista2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_marginStart="10dp"
+                        android:text="Juan Perez"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/artista3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:text="Juan Perez"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/artista4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A9DDF"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:text="Juan Perez"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutColumnas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/btnVolver2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:text="&lt;Volver"
+                    android:textColor="#9A9DDF"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnMenuPrincipal2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:text="Ir al menú principal  "
+                android:textAlignment="viewEnd"
+                android:textColor="#9A9DDF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

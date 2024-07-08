@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".infoActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="ART GALLERY"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#FFFF"
+        android:textSize="54sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="#404D81">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:text="Sobre la app:"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#ACB5F0"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:padding="1dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Bienvenido a la aplicación Art Gallery. Explora una amplia selección de obras de diversos géneros y estilos. Encuentra información detallada sobre cada obra, incluyendo título, año, descripción y precio estimado. También podrás realizar ofertas de compra. Navega fácilmente entre artistas, obras y géneros. ¡Comienza ya!"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/btnVolver5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:text="&lt;Volver "
+                android:textColor="#9A9DDF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnVerGen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:text="Ver géneros y estilos "
+            android:textAlignment="viewEnd"
+            android:textColor="#9A9DDF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

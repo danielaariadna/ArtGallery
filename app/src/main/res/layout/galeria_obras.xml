@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <GridView
+        android:id="@+id/gridview_galeria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:columnWidth="140dp"
+        android:horizontalSpacing="4dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="40dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/btnVolver3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:text="&lt;Volver"
+                android:textColor="#9A9DDF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnMenuPrincipal3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:text="Ir al menú principal  "
+            android:textAlignment="viewEnd"
+            android:textColor="#9A9DDF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
